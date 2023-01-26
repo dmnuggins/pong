@@ -18,3 +18,5 @@ func get_opponent_move():
 			return -1
 	else:
 		return 0
+
+# could use "action_press()" to simulate pressing space bar when launching ball

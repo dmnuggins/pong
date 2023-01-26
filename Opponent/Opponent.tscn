@@ -23,3 +23,7 @@ texture = ExtResource( 2 )
 
 [node name="OpponentBallSpawn" type="Node2D" parent="."]
 position = Vector2( 24, 0 )
+
+[node name="OpponentTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true

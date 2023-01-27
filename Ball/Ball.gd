@@ -3,7 +3,7 @@ extends KinematicBody2D
 signal score
 
 # movement with KinematicBody2D
-export var speed = 550.0
+export var speed = 575.0
 var velocity = Vector2.ZERO
 var in_play = false
 var test_num = 0

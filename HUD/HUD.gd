@@ -10,6 +10,7 @@ func _on_NewGameButton_mouse_exited():
 
 func _on_NewGameButton_pressed():
 	get_tree().change_scene("res://Main.tscn")
+	get_tree().reload_current_scene()
 
 
 func _on_ExitButton_mouse_entered():

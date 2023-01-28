@@ -54,8 +54,9 @@ func on_score():
 
 func end_game(winner):
 	$ResetTimer.stop()
-	$Opponent/OpponentTimer.stop()
+	$Opponent.get_node("OpponentTimer").stop()
 	$Divider.hide()
+	$HUD.get_node("TimerLabel").hide()
 	if winner == 1:
 		$HUD.get_node("MessageLabel").text = "PLAYER 1 WINS"
 	else:

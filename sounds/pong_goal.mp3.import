@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pong_goal.mp3-4b2de77e38c4892aaf1ab5333297c39c.mp3str"
+
+[deps]
+
+source_file="res://sounds/pong_goal.mp3"
+dest_files=[ "res://.import/pong_goal.mp3-4b2de77e38c4892aaf1ab5333297c39c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -3,7 +3,7 @@ extends KinematicBody2D
 signal score
 
 # movement with KinematicBody2D
-export var speed = 575.0
+export var speed = 500.0
 var velocity = Vector2.ZERO
 var in_play = false
 var test_num = 0
@@ -27,6 +27,7 @@ func _physics_process(delta):
 	var collision = move_and_collide(velocity * speed * delta)
 	
 	if collision:
+		$Wall.play()
 		velocity = velocity.bounce(collision.normal)
 	
 func update_ball_status():

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pong_paddle.mp3-e6b0b731778831a7f2f8481f234932ed.mp3str"
+
+[deps]
+
+source_file="res://sounds/pong_paddle.mp3"
+dest_files=[ "res://.import/pong_paddle.mp3-e6b0b731778831a7f2f8481f234932ed.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

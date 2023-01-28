@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ball/Ball.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Goal/Goal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Main.gd" type="Script" id=7]
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=8]
+[ext_resource path="res://sounds/pong_goal.mp3" type="AudioStream" id=9]
 
 [node name="Main" type="Node"]
 script = ExtResource( 7 )
@@ -50,6 +51,9 @@ position = Vector2( 1120, 32 )
 [node name="ResetTimer" type="Timer" parent="."]
 wait_time = 4.0
 one_shot = true
+
+[node name="Goal" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
 
 [connection signal="timeout" from="Opponent/OpponentTimer" to="Ball" method="_on_OpponentTimer_timeout"]
 [connection signal="body_entered" from="Left" to="." method="_on_Left_body_entered"]

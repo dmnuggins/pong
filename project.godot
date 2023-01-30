@@ -13,6 +13,7 @@ config_version=4
 config/name="pong"
 run/main_scene="res://MainMenu/TitleScreen.tscn"
 config/icon="res://icon.png"
+config/windows_native_icon="res://assets/favicon.ico"
 
 [display]
 
